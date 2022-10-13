@@ -30,7 +30,7 @@ db.query(q,(err,data)=>{
 
 app.get("/users/:id", (req,res)=>{
     const userId = req.params.id;
-    const q=  "SELECT *  FROM users WHERE id = ?";
+    const q=  "SELECT *  FROM users WHERE id = ?"
 
 
     db.query(q,[userId], (err,data) =>{
